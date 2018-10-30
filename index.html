@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+            type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="scripts/app.js"></script>
+    <script defer src="scripts/firstSlider.js"></script>
+    <script defer src="scripts/infoSlider.js"></script>
+    <script defer src="scripts/collection.js"></script>
+
+
+
+</head>
+<body>
+
+<header class="firstPage">
+    <div class="slides fader"><img class="image" src="images/page1/watches_1.png" alt=""></div>
+    <div class="slides fader"><img class="image" src="images/page1/watches_2.png" alt=""></div>
+    <div class="slides fader"><img class="image" src="images/page1/watches_1.png" alt=""></div>
+    <div class="slides fader"><img class="image" src="images/page1/watches_2.png" alt=""></div>
+
+    <div class="container-fluid first__page__container">
+        <div class="row header">
+            <div class="col-xl-4 headerText">Custom Logo Watches & More, Free Shipping & Returns</div>
+            <div class="col-xl-4 headerButtons mlauto">
+                <nav>
+                    <ul class="menu ">
+                        <li class="menu__item js-button-campaign" id="searchBtn"><a href="javascript:void(0)"><img
+                                src="images/header/search.png" alt="search"></a></li>
+                        <li class="menu__item" id="cartBox"><a href="javascript:void(0)"><img
+                                src="images/header/cart.png"
+                                alt="cart"></a> <span
+                                class="count">0</span></li>
+                        <li class="menu__item " id="js-button-log"><a href="javascript:void(0)"><img
+                                src="images/header/user.png"
+                                alt="user"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row second-menu">
+            <div class="col-xl-2 logo">
+                <span class="awlLogo">ALW LOGO</span><span class="awlLogo-min">American Logo Watch</span>
+            </div>
+            <div class="col-xl-8">
+                <nav>
+                    <ul class="secondMenu d-flex justify-content-center">
+                        <li class="second-menu-item"><a href="#">Watches</a></li>
+                        <li class="second-menu-item"><a href="#">Services</a></li>
+                        <li class="second-menu-item"><a href="#">Faqs</a></li>
+                        <li class="second-menu-item"><a href="#">Contact</a></li>
+                        <li class="second-menu-item"><a href="#">Request Virtual</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xl-2 mlauto phone__info ">
+                <div class="phone__icon">
+                    <img src="images/page1/phoneIcon.png" alt="phone_icon">
+                </div>
+                <span class="phone__number">1 (800) 862   6772 </span>
+            </div>
+        </div>
+
+        <div class="row offer__row">
+            <div class="col-xl-6 offer">
+                <div class="first__offer">Custom Watches For<br>Any Occasion</div>
+                <div class="offer__buttons">
+                    <button class="offer__button__one offer__btn">Design & Order</button>
+                    <button class="offer__button__two offer__btn">Request Virtual Sample</button>
+                </div>
+                <div class="change__dotes">
+                    <ol>
+                        <li class="first__slider_btn dot" id="slide-1" onclick="currentSlide(1)"></li>
+                        <li class="first__slider_btn dot" id="slide-2" onclick="currentSlide(2)"></li>
+                        <li class="first__slider_btn dot" id="slide-3" onclick="currentSlide(3)"></li>
+                        <li class="first__slider_btn dot" id="slide-4" onclick="currentSlide(4)"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="info container-fluid">
+    <div class="row ">
+        <div class="col-xl-6 info__arrows  mlauto d-flex justify-content-start">
+            <img class="info__arrow" onclick="plusSlides(-1)" src="images/page2/left.png" alt="">
+            <img class="info__arrow" onclick="plusSlides(1)" src="images/page2/right.png" alt="">
+        </div>
+    </div>
+    <div class="row information fader">
+        <div class="col-xl-6 mlauto info__col">
+            <div class="big__text">Our Store</div>
+            <div class="min__text">As many of you know, our company has a wide field of activity: we are engaged in the
+                development of products, publish design and code related articles, and support the Market, where
+                designers publish their products to sell. FS Industrie is created for digital designs where flexibility
+                is essential. Designed by Phil Garnham and Fernando Mello, the font combines aesthetics with functional
+                utility, delivering a precise and direct feel.
+            </div>
+        </div>
+    </div>
+    <div class="row information fader">
+        <div class="col-xl-6 mlauto info__col">
+            <div class="big__text">Reliability</div>
+            <div class="min__text">As many of you know, our company has a wide field of activity: we are engaged in the
+                development of products, publish design and code related articles, and support the Market, where
+                designers publish their products to sell. FS Industrie is created for digital designs where flexibility
+                is essential. Designed by Phil Garnham and Fernando Mello, the font combines aesthetics with functional
+                utility, delivering a precise and direct feel. Subtle design changes result in optically consistent
+                visual impression where each width contrasts with the next to define typographic hierarchy in graphic
+                layouts.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="catalog container-fluid">
+    <div class="row">
+        <div class="col-xl-3">
+            <span class="collections">Collections</span>
+        </div>
+        <div class="col-xl-9 " id="tabs">
+            <ul class="nav tabs ">
+                <li class="nav_item" onclick="showPanel(0)">
+                    <span class="tab__item tab">LATEST</span>
+                </li>
+                <li class="nav_item" onclick="showPanel(1)">
+                    <span class="tab__item tab">POPULAR</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrap item_tab" id="tabs-1" >
+        <div class="slider">
+            <button class="slider__btn prev__btn" onclick="prev()">&laquo;</button>
+            <div class="scroller">
+                <ul class="items">
+                    <li class="item">
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w1.png" alt=""></div>
+                            <div class="swiper-name">Adriatica ADR</div>
+                            <div class="swiper-coast">$650, 00</div>
+                        </div>
+                        <div class="slide second__watch">
+                            <div class="swiper-image"><img src="images/page3/w2.png" alt=""></div>
+                            <div class="swiper-name">SEIKO SNZG07K1</div>
+                            <div class="swiper-coast">$125, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w3.png" alt=""></div>
+                            <div class="swiper-name">ROAMER RM 220837</div>
+                            <div class="swiper-coast">$250, 00</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w1.png" alt=""></div>
+                            <div class="swiper-name">Adriatica ADR</div>
+                            <div class="swiper-coast">$650, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w2.png" alt=""></div>
+                            <div class="swiper-name">SEIKO SNZG07K1</div>
+                            <div class="swiper-coast">$125, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w3.png" alt=""></div>
+                            <div class="swiper-name">ROAMER RM 220837</div>
+                            <div class="swiper-coast">$250, 00</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w1.png" alt=""></div>
+                            <div class="swiper-name">Adriatica ADR</div>
+                            <div class="swiper-coast">$650, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w2.png" alt=""></div>
+                            <div class="swiper-name">SEIKO SNZG07K1</div>
+                            <div class="swiper-coast">$125, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w3.png" alt=""></div>
+                            <div class="swiper-name">ROAMER RM 220837</div>
+                            <div class="swiper-coast">$250, 00</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="slider__btn next__btn" onclick="next()">&raquo;</button>
+        </div>
+
+    </div>
+
+    <!--SECOND TAB-->
+    <div class="wrap item_tab" id="tabs-2">
+        <div class="slider">
+            <button class="slider__btn prev__btn" onclick="prevs()">&laquo;</button>
+            <div class="scroller">
+                <ul class="itemz">
+                    <li class="iten">
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w1.png" alt=""></div>
+                            <div class="swiper-name">Adriatica ADR</div>
+                            <div class="swiper-coast">$650, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w3.png" alt=""></div>
+                            <div class="swiper-name">ROAMER RM 220837</div>
+                            <div class="swiper-coast">$250, 00</div>
+                        </div>
+                        <div class="slide second__watch">
+                            <div class="swiper-image"><img src="images/page3/w2.png" alt=""></div>
+                            <div class="swiper-name">SEIKO SNZG07K1</div>
+                            <div class="swiper-coast">$125, 00</div>
+                        </div>
+
+                    </li>
+                    <li class="iten">
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w1.png" alt=""></div>
+                            <div class="swiper-name">Adriatica ADR</div>
+                            <div class="swiper-coast">$650, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w2.png" alt=""></div>
+                            <div class="swiper-name">SEIKO SNZG07K1</div>
+                            <div class="swiper-coast">$125, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w3.png" alt=""></div>
+                            <div class="swiper-name">ROAMER RM 220837</div>
+                            <div class="swiper-coast">$250, 00</div>
+                        </div>
+                    </li>
+                    <li class="iten">
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w2.png" alt=""></div>
+                            <div class="swiper-name">SEIKO SNZG07K1</div>
+                            <div class="swiper-coast">$125, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w1.png" alt=""></div>
+                            <div class="swiper-name">Adriatica ADR</div>
+                            <div class="swiper-coast">$650, 00</div>
+                        </div>
+                        <div class="slide">
+                            <div class="swiper-image"><img src="images/page3/w3.png" alt=""></div>
+                            <div class="swiper-name">ROAMER RM 220837</div>
+                            <div class="swiper-coast">$250, 00</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="slider__btn next__btn" onclick="nexts()">&raquo;</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="brands container-fluid">
+    <div class="row row__brands">
+
+        <div class="brand col-xl-3">
+            <img src="images/page3/Снимок.PNG" alt="">
+        </div>
+        <div class="brand col-xl-3 ">
+            <img   src="images/page3/brand2.png" alt="">
+        </div>
+        <div class="brand brandEnd col-xl-3 ">
+            <img src="images/page3/brand3.png" alt="">
+        </div>
+        <div class="brand brandEnd col-xl-3 ">
+            <img src="images/page3/brand4.png" alt="">
+        </div>
+
+    </div>
+</section>
+
+
+<section class="container-fluid people">
+    <div class="row what">
+        <div class="col-xl-12 d-flex justify-content-center">
+            <span>what customers are saying</span>
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="row customer-slider">
+            <div class="col-xl-6 customer1">
+                <div class="photo__div">
+                    <img class="customer__photo" src="images/page4/girl1.png" alt="">
+                </div>
+                <div class="customer__info ">
+                    <span class="customer__name">Amanda Smith</span><br>
+                    <div class="customer__text ">
+                        As many of you know, our company has a wide field of activity: we are engaged in the development
+                        of products, publish design and code related articles, and support the Market, where designers
+                        publish their products to sell.
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 customer2">
+                <div class="photo__div">
+                    <img class="customer__photo" src="images/page4/girl2.png" alt="">
+                </div>
+                <div class="customer__info customer__info__2 ">
+                    <span class="customer__name">Sandra  Willims</span><br>
+                    <div class="customer__text ">
+                        As many of you know, our company has a wide field of activity: we are engaged in the development
+                        of products, publish design and code related articles, and support the Market, where designers
+                        publish their products to sell.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row customer-slider">
+            <div class="col-xl-6 customer1">
+                <div class="photo__div">
+                    <img class="customer__photo" src="images/page4/girl1.png" alt="">
+                </div>
+                <div class="customer__info ">
+                    <span class="customer__name">Amanda Smith</span><br>
+                    <div class="customer__text ">
+                        As many of you know, our company has a wide field of activity: we are engaged in the development
+                        of products, publish design and code related articles, and support the Market, where designers
+                        publish their products to sell.
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 customer2">
+                <div class="photo__div">
+                    <img class="customer__photo" src="images/page4/girl2.png" alt="">
+                </div>
+                <div class="customer__info customer__info__2">
+                    <span class="customer__name">Sandra  Willims</span><br>
+                    <div class="customer__text ">
+                        As many of you know, our company has a wide field of activity: we are engaged in the development
+                        of products, publish design and code related articles, and support the Market, where designers
+                        publish their products to sell.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row customer-slider">
+            <div class="col-xl-6 customer1">
+                <div class="photo__div">
+                    <img class="customer__photo" src="images/page4/girl1.png" alt="">
+                </div>
+                <div class="customer__info ">
+                    <span class="customer__name">Amanda Smith</span><br>
+                    <div class="customer__text ">
+                        As many of you know, our company has a wide field of activity: we are engaged in the development
+                        of products, publish design and code related articles, and support the Market, where designers
+                        publish their products to sell.
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 customer2">
+                <div class="photo__div">
+                    <img class="customer__photo" src="images/page4/girl2.png" alt="">
+                </div>
+                <div class="customer__info customer__info__2">
+                    <span class="customer__name">Sandra  Willims</span><br>
+                    <div class="customer__text ">
+                        As many of you know, our company has a wide field of activity: we are engaged in the development
+                        of products, publish design and code related articles, and support the Market, where designers
+                        publish their products to sell.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row row__customers__dots">
+        <div class="customers__buttons col-xl-12 ">
+            <ul class="customer_dots">
+                <li class="customer_dot"></li>
+                <li class="customer_dot"></li>
+                <li class="customer_dot"></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+<div class="row footer__info">
+
+    <div class="col-xl-4">
+        <div class="company__name">ALW Logo</div>
+        <div class="company__name__little">American Logo Watch</div>
+    </div>
+    <div class="col-xl-4">
+        <div class="footer__menu">menu</div>
+        <div class="footer__menu__items">
+          <ul class="flex__ul__menu">
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">My Account</a></li>
+          </ul>
+
+        </div>
+    </div>
+    <div class="col-xl-4 cl">
+        <div class="footer__subscribe">Sign Up For Our Newsletter</div>
+        <div class="subscribe__container">
+                <input placeholder="Enter email" class="subscribe__container__mail" type="text">
+                <button class="subscribe__container__button">Send</button>
+        </div>
+    </div>
+</div>
+    <div class="row footer_links">
+        <div class="col-xl-3 copyright">
+            All rights reserved 2018
+        </div>
+        <div class="col-xl-3 links mlauto">
+            <a href="#" class="link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="link"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+
+<div class="overlay js-overlay-campaign">
+    <div class="popup js-popup-campaign">
+        <h2 class="searchText">Search</h2>
+        <form>
+            <input class="searchInput" type="text">
+        </form>
+        <div class="close-popup js-close-campaign"></div>
+    </div>
+</div>
+<div class="overlay js-overlay-log">
+    <div class="popup js-popup-log">
+        <h2 class="searchText">Login</h2>
+        <form>
+            <input placeholder="email" class="email" type="text">
+            <input placeholder="password" class="password" type="password">
+            <button class="login__btn">LOGIN</button>
+        </form>
+        <div class="close-popup js-close-log"></div>
+    </div>
+</div>
+<script src="scripts/tabs.js"></script>
+<script src="scripts/customerSlider.js"></script>
+</body>
+</html>
